@@ -1,13 +1,13 @@
 # 🎟️ Q_Ket — Cloud Native Ticketing Platform
 
-**AWS 기반 클라우드 네이티브 공연 예매 플랫폼**
+**AWS 기반 클라우드 공연 예매 플랫폼**
 
 Q_Ket은 사용자가 공연을 탐색하고, 좌석을 선택하고, 예매 및 결제를 진행할 수 있는 웹 서비스입니다.
 
 AWS 기반 인프라에 애플리케이션을 배포하고, Terraform을 통한 인프라 관리와 Kubernetes 기반 컨테이너 오케스트레이션, GitOps 배포 체계를 적용한 팀 프로젝트입니다.
 
-**프로젝트 기간:** 2026.03 ~ 2026.09 (교육 과정 기간, 실제 프로젝트 기간 확인 필요)  
-**프로젝트 유형:** AWS·DevOps 교육 과정 팀 프로젝트  
+**프로젝트 기간:** 2026.07 ~ 2026.09 
+
 **GitHub Organization:** https://github.com/qKet
 
 ---
@@ -82,45 +82,29 @@ GitHub Actions와 Argo CD를 이용한 배포 파이프라인을 구성했습니
 5. Argo CD에서 변경사항 감지
 6. Argo CD 수동 Sync를 통해 EKS에 배포
 
+
 ## 5. My Contributions
 
-*개인 담당 범위 확인 후 구체화 예정*
+### AWS Infrastructure & Terraform
+- Terraform을 활용한 AWS 인프라 구성 및 관리에 참여
+- VPC, Subnet, Security Group 등 네트워크 리소스 구성
+- Amazon EKS 기반 Kubernetes 클러스터 구축 및 인프라 모듈 관리
 
-| 영역 | 담당 업무 및 기여 |
-|---|---|
-| AWS Infrastructure | [직접 담당한 AWS 리소스 및 설계 내용] |
-| Terraform | [작성하거나 개선한 모듈] |
-| Kubernetes | [직접 구성한 배포 리소스 및 운영 작업] |
-| CI/CD | [구축하거나 개선한 파이프라인] |
-| Collaboration | [기술 선정 과정에서 제안한 대안과 의사결정] |
+### Kubernetes & Auto Scaling
+- Kubernetes 기반 애플리케이션 배포 환경 구성
+- Karpenter를 활용한 노드 오토스케일링 환경 구성
+- KEDA를 활용한 Pod 오토스케일링 설정
 
-## 6. Troubleshooting
+### CI/CD & GitOps
+- GitHub Actions 기반 CI 파이프라인 구성
+- Docker 이미지 빌드 및 Amazon ECR 연동
+- Helm과 Argo CD를 활용한 GitOps 배포 환경 구성
 
-### CORS 문제로 인한 API 요청 실패
-
-**문제 상황**
-
-프론트엔드와 백엔드 연동 과정에서 CORS 문제로 API 요청이 정상적으로 처리되지 않았습니다.
-
-**해결 과정**
-
-- 브라우저 개발자 도구와 API 요청 흐름을 바탕으로 원인 조사
-- 프론트엔드 요청과 백엔드 CORS 설정 점검
-- 반복적인 테스트를 통해 문제 해결
-
-**결과 및 배운 점**
-
-8시간 이상 문제를 추적하여 API 통신 오류를 해결했습니다.
-
-[정확한 원인, 변경한 설정 및 해결 결과 추가 예정]
-
-### 추가 트러블슈팅
-
-- [인프라 구축 과정에서 해결한 문제]
-- [Kubernetes 또는 CI/CD 관련 문제]
-- [성능 및 비용 최적화 경험]
-
-## 7. Project Repositories
+### Collaboration & Technical Decisions
+- 인프라 구성 및 서비스 배포 과정에서 발생한 문제를 팀원들과 공유하고 해결 방안 논의
+- 팀원들과 인프라 구성 및 기술 선정 방향 논의
+  
+## 6. Project Repositories
 
 | Repository | Description |
 |---|---|
@@ -131,8 +115,3 @@ GitHub Actions와 Argo CD를 이용한 배포 파이프라인을 구성했습니
 | [Docs](https://github.com/qKet/docs) | 프로젝트 설계 및 기술 문서 |
 | [Wiki](https://github.com/qKet/CLAUDE_LLM_WIKI) | 아키텍처, 기술 의사결정 및 트러블슈팅 |
 
----
-
-**Team Q_Ket** | AWS Cloud & DevOps Project
-
-[GitHub Organization](https://github.com/qKet)
