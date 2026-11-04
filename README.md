@@ -85,6 +85,10 @@ GitHub Actions와 Argo CD를 이용한 배포 파이프라인을 구성했습니
 
 ## 5. My Contributions
 
+### Logging & Monitoring
+- Loki·Promtail 기반 서비스 로그 수집 및 Grafana 통합 조회 환경 구축
+- Grafana 대시보드에서 CPU·메모리 사용량 등 자원 상태 확인
+
 ### AWS Infrastructure & Terraform
 - Terraform을 활용한 AWS 인프라 구성 및 관리에 참여
 - VPC, Subnet, Security Group 등 네트워크 리소스 구성
@@ -92,7 +96,8 @@ GitHub Actions와 Argo CD를 이용한 배포 파이프라인을 구성했습니
 
 ### Kubernetes & Auto Scaling
 - Kubernetes 기반 애플리케이션 배포 환경 구성
-- Karpenter를 활용한 노드 오토스케일링 환경 구성
+- Cluster Autoscaler에서 Karpenter로 전환하는 작업에 참여
+- 컨트롤러 배치를 막는 Helm 설정을 팀원과 함께 검토·수정
 - KEDA를 활용한 Pod 오토스케일링 설정
 
 ### CI/CD & GitOps
