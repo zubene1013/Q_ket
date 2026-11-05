@@ -25,8 +25,6 @@ AWS 기반 인프라에 애플리케이션을 배포하고, Terraform을 통한 
 
 **AWS 인프라 아키텍처**
 
-[전체 AWS 아키텍처 다이어그램 삽입 예정]
-
 주요 인프라 구성은 다음과 같습니다.
 
 - **Network:** VPC, Subnet, Security Group, NAT Gateway
@@ -118,5 +116,4 @@ GitHub Actions와 Argo CD를 이용한 배포 파이프라인을 구성했습니
 | [Backend](https://github.com/qKet/backend) | Spring Boot 기반 API 서버 |
 | [Frontend](https://github.com/qKet/frontend) | Next.js 기반 웹 애플리케이션 |
 | [Docs](https://github.com/qKet/docs) | 프로젝트 설계 및 기술 문서 |
-| [Wiki](https://github.com/qKet/CLAUDE_LLM_WIKI) | 아키텍처, 기술 의사결정 및 트러블슈팅 |
 
